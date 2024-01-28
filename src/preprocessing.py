@@ -1,6 +1,6 @@
-import re
-import json
 import argparse
+import json
+import re
 
 from bridge_content_encoder import get_database_matches
 from sql_metadata import Parser
@@ -49,7 +49,7 @@ def get_db_contents(question, table_name_original, column_names_original, db_id,
             question,
             table_name_original,
             column_name_original,
-            db_path + "/{}/{}.sqlite".format(db_id, db_id)
+            db_path + "\\{}\\{}.sqlite".format(db_id, db_id)
         )
         matches = sorted(matches)
         matched_contents.append(matches)
